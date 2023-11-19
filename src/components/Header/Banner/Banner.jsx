@@ -1,8 +1,10 @@
+import banner from "../../../image/banner.jpg";
+
 const Banner = () => {
   return (
     <div
       className="hero h-[600px]"
-      style={{ backgroundImage: "url(src/image/banner.jpg)" }}
+      style={{ backgroundImage: `url(${banner})` }}
     >
       <div className="hero-overlay bg-opacity-75"></div>
       <div className="hero-content text-center text-neutral-content">
