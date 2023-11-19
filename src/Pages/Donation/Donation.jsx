@@ -13,17 +13,15 @@ const Donation = () => {
     if (donationItem) {
       setDonations(donationItem);
 
-      const total = donations.reduce(
-        (preValue, currentItem) => preValue + currentItem.price,0);
-        
-      
+      const total = donations.reduce((preValue,currentItem) => preValue + currentItem.price,0);  
       setTotalPrice(total);
-    } else {
+    } 
+    else {
       setNoDataFound("No Data Found");
     }
   }, []);
 
-  console.log(donations);
+ 
 
   const handleRemove = () => {
     localStorage.clear();
